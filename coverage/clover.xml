@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1487201814810" clover="3.2.0">
+  <project timestamp="1487201814810" name="All files">
+    <metrics statements="15" coveredstatements="14" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3" elements="26" coveredelements="24" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1">
+      <file name="MadeWithLove.js" path="/Users/chrisgregori/Projects/react-made-with-love/src/MadeWithLove.js">
+        <metrics statements="15" coveredstatements="14" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

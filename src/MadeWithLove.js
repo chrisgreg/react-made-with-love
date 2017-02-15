@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class MadeWithLove extends Component {
 
   getBaseMessage(props) {
-    const { emoji, by, link } = props;
+    const { emoji, by, link, icons } = props;
     let message = 'Made with <3';
     let author = by;
 
@@ -27,16 +27,20 @@ export default class MadeWithLove extends Component {
           {message}
         </span>
     );
-  }
+  };
 
   componentWillMount() {
-    this.baseMessage = this.getBaseMessage(this.props);
+    const { icons } = this.props;
+    this.message = this.getBaseMessage(this.props);
+    if (icons) {
+      this.message = this.getIconMessage(this.message, icons);
+    }
   }
 
   render() {
     return (
       <div className="made-with-love">
-        {this.baseMessage}
+        {this.message}
       </div>
     )
   }

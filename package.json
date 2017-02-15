@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "react-inlinesvg": "^0.5.5"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -24,6 +27,7 @@
     "jest": "^18.1.0",
     "jest-cli": "^18.1.0",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "@kadira/storybook": "^2.21.0"
   }
 }
