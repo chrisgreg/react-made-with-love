@@ -4,11 +4,11 @@ export default class MadeWithLove extends Component {
 
   getBaseMessage(props) {
     const { emoji, by, link, icons } = props;
-    let message = 'Made with <3';
+    let messageBase = 'Made with <3';
     let author = by;
 
     if (emoji) {
-      message = 'Made with ❤️';
+      messageBase = this.emojify(messageBase, emoji);
     }
 
     if (by) {
@@ -17,24 +17,40 @@ export default class MadeWithLove extends Component {
       }
       return(
         <span>
-          {`${message} by `}{author}
+          {`${messageBase} by `}{author}
         </span>
       )
     }
 
     return(
         <span>
-          {message}
+          {messageBase}
         </span>
     );
-  };
+  }
+
+  getIconMessage(props) {
+
+  }
+
+  emojify(messageBase, emoji) {
+    if (emoji.verb) {
+      messageBase = messageBase.replace('Made', emoji.verb);
+    }
+    if (emoji.using) {
+      messageBase = messageBase.replace('<3', emoji.using);
+    } else {
+      messageBase = messageBase.replace('<3', '❤️');
+    }
+    return messageBase;
+  }
+
 
   componentWillMount() {
     const { icons } = this.props;
     this.message = icons
                   ? this.getIconMessage(this.props)
                   : this.getBaseMessage(this.props);
-
   }
 
   render() {
