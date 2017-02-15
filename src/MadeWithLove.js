@@ -31,10 +31,10 @@ export default class MadeWithLove extends Component {
 
   componentWillMount() {
     const { icons } = this.props;
-    this.message = this.getBaseMessage(this.props);
-    if (icons) {
-      this.message = this.getIconMessage(this.message, icons);
-    }
+    this.message = icons
+                  ? this.getIconMessage(this.props)
+                  : this.getBaseMessage(this.props);
+
   }
 
   render() {

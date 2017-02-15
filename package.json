@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel -o /lib",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
