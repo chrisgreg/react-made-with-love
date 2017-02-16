@@ -15,9 +15,9 @@ A React component providing a 'Made With Love' banner that can be customised out
 
 `npm install --save react-made-with-love`
 
-### Docs
+### Docs & Examples
 
-### Examples
+[Docs and Usage](https://chrisgreg.github.io/react-made-with-love/)
 
 ## License
 
