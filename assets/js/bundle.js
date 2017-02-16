@@ -24834,6 +24834,15 @@ var Docs = function (_Component) {
           'Documentation'
         ),
         _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            'Styles can be overriden with \'.made-with-love\', \'.made-with-love-icon-verb\', and \'.made-with-love-icon-using\''
+          )
+        ),
+        _react2.default.createElement(
           'h4',
           { className: 'header-level-4' },
           'Props'

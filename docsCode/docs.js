@@ -39,6 +39,11 @@ class Docs extends Component {
           </div>
 
         <h2 className="header-level-2">Documentation</h2>
+        <ul>
+          <li>
+            Styles can be overriden with '.made-with-love', '.made-with-love-icon-verb', and '.made-with-love-icon-using'
+          </li>
+        </ul>
         <h4 className="header-level-4">Props</h4>
         <ul>
           <li>
