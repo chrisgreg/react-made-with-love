@@ -16,3 +16,7 @@ A tiny (1.4kb gzipped) React component providing a 'Made With Love' banner that 
 ### Docs
 
 TODO
+
+## License
+
+ISC
