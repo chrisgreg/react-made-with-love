@@ -1,6 +1,6 @@
 {
   "name": "react-made-with-love",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny React component providing a 'Made With Love' banner that can be customised with emojis and SVG icons.",
   "main": "lib/index.js",
   "scripts": {
