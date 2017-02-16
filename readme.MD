@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/chrisgreg/react-made-with-love.svg?token=7RtYsTdUb4pT8z8UvHkG&branch=master)](https://travis-ci.com/chrisgreg/react-made-with-love)
+
 # react-made-with-love ❤️
 
 ### What?
