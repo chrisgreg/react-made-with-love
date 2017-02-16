@@ -60,6 +60,7 @@ export default class MadeWithLove extends Component {
     let join = ' with ';
     let using = '<3';
 
+    // Required for center alignment with text
     const style = {
       'vertical-align': 'sub'
     }
