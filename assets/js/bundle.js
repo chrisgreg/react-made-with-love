@@ -24790,7 +24790,7 @@ var Docs = function (_Component) {
         _react2.default.createElement(
           'p',
           null,
-          'A tiny (1.4kb gzipped) React component providing a \'Made With Love\' banner that can be customised out-of-the-box with emojis and user-provided SVG icons.'
+          'A small (1.4kb gzipped) React component providing a \'Made With Love\' banner that can be customised out-of-the-box with emojis and user-provided SVG icons.'
         ),
         _react2.default.createElement(
           'h2',
@@ -24811,6 +24811,142 @@ var Docs = function (_Component) {
           'p',
           null,
           '100% test coverage using Jest & Enzyme'
+        ),
+        _react2.default.createElement(
+          'h2',
+          { className: 'header-level-2' },
+          'Usage'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'language-js highlighter-rouge' },
+          _react2.default.createElement(
+            'pre',
+            { 'class': 'highlight' },
+            '`import MadeWithLove from \'react-made-with-love\';`',
+            _react2.default.createElement('br', null),
+            (0, _reactElementToJsxString2.default)(_react2.default.createElement(_index2.default, { emoji: true, by: 'Chris' }))
+          )
+        ),
+        _react2.default.createElement(
+          'h2',
+          { className: 'header-level-2' },
+          'Documentation'
+        ),
+        _react2.default.createElement(
+          'h4',
+          { className: 'header-level-4' },
+          'Props'
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'code',
+              null,
+              'emoji'
+            ),
+            ' - Emoji object - if specified will render \u2764\uFE0F.',
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'code',
+                  null,
+                  'emoji.verb'
+                ),
+                ' - Emoji property - replaces \'Made\'.'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'code',
+                  null,
+                  'emoji.using'
+                ),
+                ' - Emoji property - replaces \u2764\uFE0F.'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'code',
+              null,
+              'icons'
+            ),
+            ' - Icons object - if specified will replace nothing by default.',
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'code',
+                  null,
+                  'icons.verb'
+                ),
+                ' - Icons property - url src to replace \'Made\' with.'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'code',
+                  null,
+                  'icons.using'
+                ),
+                ' - Icons property - url src to replace \u2764\uFE0F with.'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'code',
+              null,
+              'by'
+            ),
+            ' - String - if specified will add "by ',
+            _react2.default.createElement(
+              'i',
+              null,
+              'value'
+            ),
+            '".'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'code',
+              null,
+              'link'
+            ),
+            ' - String - requires ',
+            _react2.default.createElement(
+              'code',
+              null,
+              'by'
+            ),
+            ' - href to url to hyperlink ',
+            _react2.default.createElement(
+              'code',
+              null,
+              'by'
+            ),
+            ' with.'
+          )
         ),
         _react2.default.createElement(
           'h2',

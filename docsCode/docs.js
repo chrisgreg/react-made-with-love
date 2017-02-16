@@ -20,7 +20,7 @@ class Docs extends Component {
       <div>
         <h2 className="header-level-2">What?</h2>
         <p>
-          A tiny (1.4kb gzipped) React component providing a 'Made With Love' banner that can be customised out-of-the-box with emojis and user-provided SVG icons.
+          A small (1.4kb gzipped) React component providing a 'Made With Love' banner that can be customised out-of-the-box with emojis and user-provided SVG icons.
         </p>
 
         <h2 className="header-level-2">Installation</h2>
@@ -28,6 +28,48 @@ class Docs extends Component {
 
         <h2 className="header-level-2">Testing?</h2>
         <p>100% test coverage using Jest & Enzyme</p>
+
+        <h2 className="header-level-2">Usage</h2>
+          <div className="language-js highlighter-rouge">
+            <pre class="highlight">
+              `import MadeWithLove from 'react-made-with-love';`
+              <br />
+              {reactElementToJSXString(<MadeWithLove emoji by="Chris"/>)}
+            </pre>
+          </div>
+
+        <h2 className="header-level-2">Documentation</h2>
+        <h4 className="header-level-4">Props</h4>
+        <ul>
+          <li>
+            <code>emoji</code> - Emoji object - if specified will render ❤️.
+              <ul>
+                <li>
+                  <code>emoji.verb</code> - Emoji property - replaces 'Made'.
+                </li>
+                <li>
+                  <code>emoji.using</code> - Emoji property - replaces ❤️.
+                </li>
+              </ul>
+          </li>
+          <li>
+            <code>icons</code> - Icons object - if specified will replace nothing by default.
+              <ul>
+                <li>
+                  <code>icons.verb</code> - Icons property - url src to replace 'Made' with.
+                </li>
+                <li>
+                  <code>icons.using</code> - Icons property - url src to replace ❤️ with.
+                </li>
+              </ul>
+          </li>
+          <li>
+            <code>by</code> - String - if specified will add "by <i>value</i>".
+          </li>
+          <li>
+            <code>link</code> - String - requires <code>by</code> - href to url to hyperlink <code>by</code> with.
+          </li>
+        </ul>
 
         <h2 className="header-level-2">Examples</h2>
         <h3 className="header-level-3">Default without props</h3>
