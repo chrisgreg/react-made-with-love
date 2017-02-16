@@ -1,8 +1,8 @@
 {
   "name": "react-made-with-love",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A tiny React component providing a 'Made With Love' banner that can be customised with emojis and SVG icons.",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib && mkdir lib",
     "build": "npm run clean && babel src --out-file lib/index.js --ignore test.js",
@@ -11,8 +11,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react", "component", "UI"
+  ],
+  "author": "Chris Gregori",
   "license": "ISC",
   "dependencies": {
     "react": "^15.4.2",
