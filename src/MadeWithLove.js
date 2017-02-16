@@ -62,7 +62,7 @@ export default class MadeWithLove extends Component {
 
     // Required for center alignment with text
     const style = {
-      'vertical-align': 'sub'
+      'verticalAlign': 'sub'
     }
 
     if (icons.verb) {
