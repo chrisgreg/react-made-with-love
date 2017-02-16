@@ -14,9 +14,26 @@ describe('Made With Love', () => {
     expect(rendered.text()).toBe('Made with <3');
   });
 
-  it('Renders a base message with emojis', () => {
+  it('Renders a base emoji message with emojis', () => {
     const rendered = shallow(<MadeWithLove emoji />);
     expect(rendered.text()).toBe('Made with ❤️');
+  });
+
+  it('Renders an emoji message with custom verb emoji', () => {
+    const emoji = {
+      verb: '💻'
+    }
+    const rendered = shallow(<MadeWithLove emoji={emoji} />);
+    expect(rendered.text()).toBe('💻 with ❤️');
+  });
+
+  it('Renders an emoji message with custom verb and using emoji', () => {
+    const emoji = {
+      verb: '💻',
+      using: '🔥'
+    }
+    const rendered = shallow(<MadeWithLove emoji={emoji} />);
+    expect(rendered.text()).toBe('💻 with 🔥');
   });
 
   it('Renders a base message with an author', () => {

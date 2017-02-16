@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Isvg from 'react-inlinesvg';
 
 export default class MadeWithLove extends Component {
 
@@ -30,7 +31,60 @@ export default class MadeWithLove extends Component {
   }
 
   getIconMessage(props) {
+    const { by, link, icons } = props;
+    let messageBase = 'Made with <3';
+    let author = by;
 
+    messageBase = this.iconify(messageBase, icons);
+
+    if (by) {
+      if (link) {
+        author = <a href={`${link}`}>{by}</a>;
+      }
+      return(
+        <span>
+          {messageBase} by {author}
+        </span>
+      )
+    }
+
+    return (
+      <span>
+        {messageBase}
+      </span>
+    )
+  }
+
+  iconify(messageBase, icons) {
+    let made = 'Made';
+    let join = ' with ';
+    let using = '<3';
+
+    const style = {
+      'vertical-align': 'sub'
+    }
+
+    if (icons.verb) {
+      made = (
+        <span style={style}>
+          <Isvg src={icons.verb}></Isvg>
+        </span>
+      )
+    }
+
+    if (icons.using) {
+      using = (
+        <span style={style}>
+          <Isvg src={icons.using}></Isvg>
+        </span>
+      )
+    }
+
+    return(
+      <span text-anchor="middle">
+        {made}{join}{using}
+      </span>
+    )
   }
 
   emojify(messageBase, emoji) {
