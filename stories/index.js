@@ -1,7 +1,5 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
-import Welcome from './Welcome';
 import MadeWithLove from '../src/MadeWithLove';
 
 import codeIcon from '../assets/code.svg';
@@ -44,4 +42,13 @@ storiesOf('MadeWithLove', module)
       using: heartIcon
     };
    return <MadeWithLove icons={icons}  by="Chris Gregori" link="http://www.chrisgregori.co.uk"/>
+  })
+  .add('Coloured Icon Message with linked author', () => {
+    const icons = {
+      using: heartIcon
+    };
+    const style = {
+      color: 'red'
+    }
+   return <MadeWithLove style={style} icons={icons}  by="Chris Gregori" link="http://www.chrisgregori.co.uk"/>
   })

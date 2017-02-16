@@ -67,7 +67,7 @@ export default class MadeWithLove extends Component {
 
     if (icons.verb) {
       made = (
-        <span style={style}>
+        <span className="made-with-love-icon-verb" style={style}>
           <Isvg src={icons.verb}></Isvg>
         </span>
       )
@@ -75,14 +75,14 @@ export default class MadeWithLove extends Component {
 
     if (icons.using) {
       using = (
-        <span style={style}>
+        <span className="made-with-love-icon-using" style={style}>
           <Isvg src={icons.using}></Isvg>
         </span>
       )
     }
 
     return(
-      <span text-anchor="middle">
+      <span>
         {made}{join}{using}
       </span>
     )
@@ -109,7 +109,7 @@ export default class MadeWithLove extends Component {
 
   render() {
     return (
-      <div className="made-with-love">
+      <div style={this.props.style} className="made-with-love">
         {this.message}
       </div>
     )
