@@ -100,7 +100,6 @@ export default class MadeWithLove extends Component {
     return messageBase;
   }
 
-
   componentWillMount() {
     const { icons } = this.props;
     this.message = icons

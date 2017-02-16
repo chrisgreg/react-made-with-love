@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -o /lib",
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "npm run clean && babel src --out-file lib/index.js --ignore test.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
